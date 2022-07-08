@@ -4,15 +4,25 @@ import showIcon from "../../../images/icons/akis.svg";
 import lockIcon from "../../../images/icons/lock.svg";
 import hideIcon from "../../../images/icons/akis_perbraukta.svg";
 
+interface ILoginInput {
+  type?: string,
+  placeholder?: string,
+  onChange: () => {},
+  name?: string,
+  defaultValue?: string,
+  unicClass?: string,
+  label?: string,
+}
+
 export default function LoginInput({
   type,
-  placeholder = "",
-  onChange = () => {},
-  name = "",
-  defaultValue = "",
-  unicClass = "",
-  label = "",
-}) {
+  placeholder,
+  onChange,
+  name,
+  defaultValue,
+  unicClass,
+  label,
+}: ILoginInput) {
   const [show, setShow] = useState(false);
 
   const eventShowHide = () => {

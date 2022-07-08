@@ -1,7 +1,14 @@
 import ArroDown from "../../../svg/ArrowDown";
 import style from "../selects/defaultSelect.module.scss";
 
-export default function DefaultSelect({ label= "", unicClass = "",option = ""}) {
+interface IDefaultSelect {
+  label?: string,
+  unicClass?: string,
+  option?: string
+
+}
+
+export default function DefaultSelect({ label, unicClass ,option }: IDefaultSelect) {
   return (
     <div className={style.select_content}>
       <label htmlFor="">{label}</label>

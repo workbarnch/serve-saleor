@@ -38,6 +38,7 @@
     "editorjs-blocks-react-renderer": "^1.2.4",
     "graphql": "16.3.0",
     "graphql-tag": "^2.12.6",
+    "moment": "^2.29.4",
     "next": "12.1.5",
     "next-seo": "^5.3.0",
     "next-sitemap": "^2.4.3",

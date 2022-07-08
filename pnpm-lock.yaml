@@ -46,6 +46,7 @@ specifiers:
   graphql: 16.3.0
   graphql-tag: ^2.12.6
   husky: ^7.0.4
+  moment: ^2.29.4
   next: 12.1.5
   next-seo: ^5.3.0
   next-sitemap: ^2.4.3
@@ -84,6 +85,7 @@ dependencies:
   editorjs-blocks-react-renderer: 1.2.4_zpnidt7m3osuk7shl3s4oenomq
   graphql: 16.3.0
   graphql-tag: 2.12.6_graphql@16.3.0
+  moment: 2.29.4
   next: 12.1.5_wolu2i6bpdkfgjugct7lmgr62m
   next-seo: 5.3.0_dtzmyspcyj3erncazrhasijzmy
   next-sitemap: 2.4.3_next@12.1.5
@@ -6320,6 +6322,10 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dev: true
+
+  /moment/2.29.4:
+    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+    dev: false
 
   /mrmime/1.0.0:
     resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}

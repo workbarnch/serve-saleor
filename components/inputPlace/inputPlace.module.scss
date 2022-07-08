@@ -1,0 +1,70 @@
+$text-color: #0f1d5b;
+$white: #ffffff;
+$orange: #ff9954;
+
+$mobile: 480px;
+$ipad: 768px;
+
+.container {
+  border-radius: 10px;
+  padding: 0 30px;
+  .title {
+    padding: 20px 55px;
+    background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 2px 3px #0f1d5b26;
+    border-radius: 10px 10px 0px 0px;
+    h3 {
+      font-size: 35px;
+      font-family: sofia-pro, sans-serif;
+      color: $text-color;
+    }
+  }
+  .content {
+    width: 100%;
+    background: #f7f6f7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #00000026;
+  }
+}
+
+@media (max-width: $ipad) {
+  .businessInfoWrap {
+    background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0%
+      0% no-repeat padding-box;
+  }
+  .container {
+    background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0%
+      0% no-repeat padding-box;
+    margin: 0 auto;
+    .title {
+      padding: 0 20px 20px;
+      background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%)
+        0% 0% no-repeat padding-box;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .content {
+      width: 100%;
+      background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%)
+        0% 0% no-repeat padding-box;
+      box-shadow: none;
+    }
+  }
+  .buttonWrapp {
+    margin-top: 0;
+  }
+}
+@media (max-width: $mobile) {
+  .container {
+    .title {
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .nextButton {
+      margin-top: 20px;
+      margin-bottom: 80px;
+      background-color: inherit;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+$ipadPro: 1024px;
+$mobile: 480px;
+$ipad: 768px;
+
+.businessInfo {
+  margin: auto;
+  button {
+    float: right;
+    margin-right: 35px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .inputWrap {
+    padding: 30px;
+    display: flex;
+    .leftSide,
+    .rightSide {
+      flex: 1 0 50%;
+    }
+    .leftSide {
+      padding-right: 15px;
+    }
+    .rightSide {
+      padding-left: 15px;
+    }
+    .inputs {
+      display: flex;
+      gap: 20px;
+      div {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: $ipad) {
+  .businessInfo {
+    background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0%
+      0% no-repeat padding-box;
+      button{
+        margin-top: 0;
+      }
+    .inputWrap {
+      padding: 0;
+      flex-direction: column;
+      .leftSide {
+        margin-right: 0;
+        padding-right: 0px;
+      }
+      .rightSide {
+        padding-left: 0px;
+      }
+    }
+  }
+}

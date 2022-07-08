@@ -1,0 +1,139 @@
+$address-icon-bg: #ebf3f9;
+$title-color: #0f1d5b;
+$address-text-color: #8d92a3;
+$mobileBackground: #f0f3f7;
+$border-color: #9399b5;
+$orange: #ff9954;
+$border-top: #eeeeee;
+
+.container {
+  max-width: 500px;
+  width: 500px;
+  min-height: 520px;
+  margin: 100px auto;
+  box-shadow: 0 3px 10px #00000026;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .title {
+    background: linear-gradient(87deg, #f5f4f5 0%, #ebf3f9 100%);
+    box-shadow: 0 2px 3px #0f1d5b26;
+
+    h3 {
+      font-size: 40px;
+      padding: 20px 50px;
+      color: $title-color;
+      font-weight: 900;
+      font-family: sofia-pro, sans-serif;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+}
+
+.address__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+
+  .address__icon {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background: $address-icon-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-family: Roboto, sans-serif;
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .address__content {
+    .address {
+      font-size: 18px;
+      color: $address-text-color;
+     
+    }
+
+    .mail {
+      font-size: 24px;
+      color: $title-color;
+    }
+    .text1{
+      font-size: 24px;
+      font-weight: 600;
+      font-family: sofia-pro, sans-serif;
+      margin-bottom: 10px;
+      color: $title-color;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .forgot_password {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 60px 20px;
+    flex: 1;
+    background: $mobileBackground;
+    .title {
+      background: none;
+      box-shadow: none;
+
+      h3 {
+        font-size: 24px;
+        padding: 0;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      flex: 1;
+      padding: 0;
+    }
+  }
+  .address__container {
+    margin-top: 60px;
+    .address__icon {
+      margin-right: 10px;
+    }
+    .address__icon {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 16px;
+      }
+    }
+    .address__content {
+      .address {
+        font-size: 14px;
+      }
+      .mail {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,12 +1,19 @@
 import style from './inputdata.module.scss';
 import icon from './calendar.svg';
 import moment from "moment";
-import {useEffect, useState} from "react";
-export  function InputDate({label, date, onChange}){
+import {ChangeEvent, useEffect, useState} from "react";
+
+interface IInputDate {
+    label?: string,
+    date?: string,
+    onChange?: () => {}
+}
+
+export  function InputDate({label, date, onChange}: IInputDate){
 
     const [calsendar, setCalendar] = useState(moment().format('YYYY-MM-DD'));
 
-    const calendarEvent = (e) => {
+    const calendarEvent = (e: ChangeEvent<HTMLInputElement>) => {
         setCalendar(e.target.value)
     }
     useEffect(() => {

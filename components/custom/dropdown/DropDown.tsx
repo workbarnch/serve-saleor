@@ -1,7 +1,17 @@
-import {useEffect, useState} from 'react';
+import {ReactNode, useEffect, useState} from 'react';
 import style from './dropdown.module.scss';
 
-export function DropDown({title, open = false, children, arrowUnicClass, unicContentClass = '', full = true, mr = false}) {
+interface IDropDown {
+    title?: string,
+    open?: boolean,
+    children?: ReactNode,
+    arrowUnicClass?: string,
+    unicContentClass?: string
+    full?: boolean,
+    mr?: boolean
+}
+
+export function DropDown({title, open = false, children, arrowUnicClass, unicContentClass, full = true, mr = false}: IDropDown) {
     const [isOpen, setIsOpen] = useState(false);
 
     const dropDownClass = full ?

@@ -8,44 +8,53 @@ export function HomeContent() {
   return (
     <section className={style.home__content}>
       <div className={style.home__content_absolute}>
-        <ul>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-          <li>
-            <div className={style.home__content_absolute_img}>{tooth()}</div>
-            <p>Odontologijos klinikoms</p>
-          </li>
-        </ul>
+        <div className={style.home__content_absalute_item}>
+          <ul>
+            <li>
+              <div className={style.home__content_absolute_img}>{tooth()}</div>
+              <p>Odontologijos klinikoms</p>
+            </li>
+            <li>
+              <div className={style.home__content_absolute_img}>{tooth()}</div>
+              <p>Odontologijos klinikoms</p>
+            </li>
+            <li>
+              <div className={style.home__content_absolute_img}>{tooth()}</div>
+              <p>Odontologijos klinikoms</p>
+            </li>
+          </ul>
+          <div className={style.home_content_absalute_item}>
+            <ul>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+              <li>
+                <div className={style.home__content_absolute_img}>{tooth()}</div>
+                <p>Odontologijos klinikoms</p>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
       </div>
       <span className={style.home__content_elipse}></span>
       <div className={style.home__content_header}>
