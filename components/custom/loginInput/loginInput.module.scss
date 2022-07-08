@@ -1,0 +1,51 @@
+$color: #8d92a3;
+
+.container {
+  padding: 30px;
+  position: relative;
+  background: #F7F6F7 0% 0% no-repeat padding-box;
+  label{
+    display: block;
+    color: $color;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Roboto;
+  }
+  input {
+    width: 100%;
+    padding: 8px 40px;
+    border: none;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    outline: none;
+    color: $color;
+    background: #FFFFFF;
+    border-radius: 5px;
+    &::placeholder {
+      color: $color;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: -35px;
+    padding: 0 10px;
+    img {
+      width: 27px;
+    }
+  }
+
+}
+@media (max-width: 480px) {
+  .container {
+    min-width: 100%;
+    input {
+      font-size: 16px;
+    }
+   .buttons{
+     margin-top: -30px;
+   }
+  }
+}

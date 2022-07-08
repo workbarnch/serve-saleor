@@ -1,0 +1,93 @@
+$text-color: #0f1d5b;
+$border-color: #9399b5;
+$ul-color: #f7f6f7;
+$button-color: #ff9954;
+$white-color: #fff;
+$ipadPro: 1025px;
+$mobile: 480px;
+$ipade: 768px;
+
+.buyContent {
+  width: 100%;
+  ul {
+    width: 100%;
+    padding: 0 30px;
+    background-color: $ul-color;
+    li {
+      display: flex;
+      padding: 30px 0;
+      &:first-child {
+        border-bottom: 1px solid $border-color;
+      }
+      .textWrap {
+        margin-left: 20px;
+        line-height: 25px;
+        p {
+          font-size: 20px;
+        }
+      }
+      .priceWrap {
+        margin-left: auto;
+        span b {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+          color: $button-color;
+          text-decoration: line-through;
+          font-weight: 600;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .buttonWrap {
+    div {
+      padding: 10px 0;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        font-weight: 600;
+        font-size: 14px;
+        & {
+          svg {
+            margin-right: 10px;
+            width: 20px;
+          }
+        }
+        &:hover {
+          background: $button-color;
+          color: #ffffff;
+          svg {
+            g {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $ipadPro) {
+  .buyContent {
+    ul {
+      padding: 0 15px;
+      li {
+        .textWrap {
+          margin-top: -5px;
+          p {
+            font-size: 15px;
+          }
+        }
+        .priceWrap {
+          span b {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$ipadPro: 1024px;
+$mobile: 480px;
+$ipad: 768px;
+
+.inputWrap {
+  input {
+    padding: 8px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    letter-spacing: normal;
+    font-family: sofia-pro, sans-serif;
+    width: 100%;
+    cursor: pointer;
+  }
+  input:focus {
+    outline: none;
+  }
+}

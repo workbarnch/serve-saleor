@@ -1,0 +1,59 @@
+$title-color: #0f1d5b;
+$subtitle-color: #ff9954;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 50px;
+  background-image: url("../../images//icons/herobg.png");
+  .titleWrap {
+    display: flex;
+    h2 {
+      margin-left: 10px;
+    }
+  }
+  h2 {
+    font-size: 56px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900;
+    color: $title-color;
+  }
+  p {
+    color: $subtitle-color;
+    font-size: 24px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    .titleWrap {
+      .buttonWrap {
+        display: flex;
+      }
+    }
+    h2 {
+      font-size: 27px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

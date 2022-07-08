@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://use.typekit.net/lna6vvi.css");
+@import "modules/var";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 112px);
+  width: 100%;
+  overflow-x: hidden;
+
+  .r__container {
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+}
+.header__padding{
+  width: 100%;
+  height: 80px;
+}
+.logo {
+  h3 {
+    font-size: 30px;
+    color: $white-text;
+    font-family: "ITCKabelStd-Book", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    background-color: silver;
+    padding: 0;
+    line-height: 0;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: $logo-yellow-color;
+      position: absolute;
+      bottom: -4px;
+      left: -2px;
+    }
+  }
+}
+.logo__pro{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: $footer-bg;
+  font-family: "ITCKabelStd-Book", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  background-color: silver;
+  padding: 0;
+  line-height: 0;
+
+  span{
+    margin-left: 10px;
+    opacity: .7;
+  }
+}
+.next_button {
+  margin-left: -30px;
+  button {
+    border: none;
+    color: #0f1d5b;
+    font-size: 18px;
+    font-weight: 400;
+    svg {
+      margin-right: 5px;
+      width: 18px;
+    }
+  }
+}
+
+main {
+  flex: 1;
+}
+
+@media (min-width: $ipade) and (max-width: $desktop) {
+  .wrapper {
+    .container {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (max-width: $ipade) {
+  .wrapper {
+    .container {
+      padding: 0 50px;
+    }
+  }
+
+}
+
+@media (max-width: $ipade) {
+  .wrapper{
+    min-height: calc(100vh - 226px);
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .header__padding{
+    height: 180px;
+  }
+}
+

@@ -1,0 +1,139 @@
+$color: #ff9954;
+$white: #ffffff;
+
+.default__button {
+  padding: 15px 30px;
+  width: 100%;
+  display: flex;
+  color: $color;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid $color;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  svg {
+    width: 25px;
+    margin-right: 10px;
+  }
+}
+.next__button {
+  button {
+    display: flex;
+    align-items: center;
+    padding: 12px 55px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+    background: $color;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .next__button_icon {
+    width: 25px;
+    margin-left: 10px;
+  }
+}
+.payment__button {
+  display: flex;
+  padding: 11px 48px;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid $color;
+  background: $white;
+  color: $color;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  span {
+    width: 20px;
+    margin-right: 10px;
+    svg {
+      path,
+      g {
+        fill: $color;
+      }
+    }
+  }
+}
+.symple__button {
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: 1px solid $color;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.symple__button_dark{
+  background: $color;
+  color: white;
+}
+.symple__button__light {
+  color: $color;
+}
+.back_button {
+  span {
+    padding: 7px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 3px #00000026;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  svg {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.btn_content {
+  margin-bottom: 50px;
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 5px;
+    &:hover {
+      background: #ff9954;
+      color: #ffffff;
+      svg {
+        g {
+          fill: #ffffff;
+        }
+      }
+    }
+    svg {
+      width: 20px;
+    }
+  }
+  .even_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .left,
+    .pdf {
+      width: 49%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .default__button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    .svg {
+      margin-right: 20px;
+    }
+  }
+}

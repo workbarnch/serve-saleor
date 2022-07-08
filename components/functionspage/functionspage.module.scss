@@ -1,0 +1,60 @@
+$text-color: #0f1d5b;
+$white-color: #ffff;
+$orange: #ff9954;
+
+.func_content {
+  color: $text-color;
+  font-family: sofia-pro, sans-serif;
+
+  h3 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .img_wrapp {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      object-fit: cover;
+    }
+  }
+
+  .choos_btn {
+    margin-top: 30px;
+
+    button {
+      width: unset;
+      padding: 10px 50px;
+      background-color: $orange;
+      color: $white-color;
+    }
+  }
+
+  .order_reg {
+    margin-top: 35px;
+
+    ul {
+      padding: 0 10px;
+
+      li {
+        position: relative;
+        padding-left: 15px;
+      }
+
+      li:before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: $orange;
+        border-radius: 100%;
+        top: 10px;
+        left: 0;
+
+      }
+    }
+  }
+}

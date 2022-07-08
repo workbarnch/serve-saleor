@@ -1,0 +1,90 @@
+$color: #8d92a3;
+
+.container {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+
+  input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    border-bottom: 2px solid $color;
+    border-bottom: 2px solid $color;
+    outline: none;
+    color: $color;
+    background: none;
+    &::placeholder {
+      color: $color;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+.danger{
+  color: #E54651;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  margin-top: 10px;
+  width: 100%;
+}
+.danger__icon{
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    border: 16px solid transparent;
+    border-bottom: 25px solid #E54651;
+    position: absolute;
+    bottom: 5px;
+  }
+  &:before{
+    content: '!';
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    min-width: 100%;
+
+    input {
+      font-size: 16px;
+    }
+  }
+}
